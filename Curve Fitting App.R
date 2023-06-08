@@ -31,7 +31,7 @@ ui <- fluidPage(theme = shinytheme("cosmo"),
                 
                 sidebarPanel(
                   sliderInput("SampleN","Input Sample Size", min = 2, max = 100, value = 50),
-                  sliderInput("Degrees","Input the Degrees of Fit", min = 0, max = 10, value = 1),
+                  sliderInput("Degrees","Input the Degrees of Fit", min = 1, max = 5, value = 1),
                   sliderInput("Int", "Input the line intercept", min = -5 , max = 5, value = 0, step = 0.1),
                   sliderInput("First", "Input the coefficient C1", min = -5, max = 5, value = 0, step = 0.1),
                   sliderInput("Second", "Input the coefficent C2", min = -5, max = 5, value = 0, step = 0.1),
